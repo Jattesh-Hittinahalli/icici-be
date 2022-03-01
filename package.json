@@ -1,0 +1,48 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "engines": {
+    "node": "14.17.1"
+  },
+  "description": "This is backend of Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.server.js",
+    "servers": "concurrently \"npm run start\" \"cd ../icici-fe-code && npm run start\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.5.5",
+    "axios": "^0.21.4",
+    "base64-to-image": "^1.0.2",
+    "based-blob": "^1.0.1",
+    "bcrypt": "^5.0.1",
+    "bcrypt-nodejs": "0.0.3",
+    "blob-to-base64": "^1.0.2",
+    "concurrently": "^6.2.1",
+    "cors": "^2.8.5",
+    "create-object-url": "^1.0.2",
+    "cross-fetch": "^3.1.4",
+    "dotenv": "^10.0.0",
+    "exceljs": "^4.3.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "file-saver": "^2.0.5",
+    "form-data": "^4.0.0",
+    "html-pdf": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.13",
+    "multer": "^1.4.2",
+    "node-blob": "0.0.2",
+    "nodemailer": "^6.6.1",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "slugify": "^1.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
