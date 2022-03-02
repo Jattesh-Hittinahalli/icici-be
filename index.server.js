@@ -24,6 +24,6 @@ app.use("/api", superadminRoutes);
 app.use("/api", adminRoutes);
 
 
-app.listen(5000, () => {
+app.listen(80, () => {
     console.log("server is running")
 })
