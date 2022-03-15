@@ -166,7 +166,6 @@ exports.allTransition = (req, res) => {
     let date = new Date(endDate);
     // add a day
     date.setDate(date.getDate() + 1);
-    console.log(date)
     // { "$match": req.body.department ? { department: req.body.department } : {} },
     verifyTransition.find(req.body.startDate && req.body.endDate ? { "createdAt": { $gte: (startDate), $lt: (date) } } : {}).exec((error, data) => {
         if (error) return res.status(400).json({ error });
@@ -174,10 +173,8 @@ exports.allTransition = (req, res) => {
             res.status(200).json({
                 data: data
             })
-
         }
     });
-
 }
 exports.toexcel = async (req, res) => {
     const startDate = req.body.startDate
