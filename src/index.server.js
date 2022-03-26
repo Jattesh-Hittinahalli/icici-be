@@ -52,6 +52,6 @@ app.use("/api", signatureRoutes);
 app.use("/api", verifyTransition);
 
 
-app.listen(3000, () => {
-    console.log("server is running on port 3000")
+app.listen(6000, () => {
+    console.log("server is running on port 6000")
 })
