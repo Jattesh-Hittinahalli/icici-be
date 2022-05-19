@@ -24,7 +24,7 @@
     "concurrently": "^6.2.1",
     "cors": "^2.8.5",
     "create-object-url": "^1.0.2",
-    "cross-fetch": "^3.1.4",
+    "cross-fetch": "^3.1.5",
     "dotenv": "^10.0.0",
     "exceljs": "^4.3.0",
     "express": "^4.17.1",

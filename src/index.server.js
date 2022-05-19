@@ -9,7 +9,12 @@ const verifyTransition = require("./Routes/verifyTransition")
 
 
 // this configration for local database not for mongo atlas
-mongoose.connect('mongodb://localhost/icici', {
+// // mongoose.connect(`mongodb://localhost/${process.env.MONGO_DB_DATABASE}`, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+//   useCreateIndex: true
+// });
+mongoose.connect(`mongodb://localhost/${process.env.MONGO_DB_DATABASE}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
